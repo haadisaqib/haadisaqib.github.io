@@ -155,3 +155,51 @@ body {
 .contact-form button:hover {
   background-color: var(--link-hover);
 }
+
+/* Cards container for Projects */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Individual project card */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Banner image for card */
+.card-banner {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Card title */
+.card-title {
+  font-size: 20px;
+  margin: 10px;
+  color: var(--heading);
+}
+
+/* Card description */
+.card-description {
+  font-size: 16px;
+  margin: 0 10px 10px 10px;
+  color: var(--text);
+}

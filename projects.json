@@ -1,0 +1,36 @@
+{
+    "projects": [
+      {
+        "banner": "assets/butterfly_augmentation.png",
+        "title": "Nordic Explorer",
+        "description": "A web-based project exploring Nordic landscapes with interactive maps and data visualization.",
+        "link": "https://example.com/nordic-explorer"
+      },
+      {
+        "banner": "images/project2-banner.jpg",
+        "title": "Frosty UI Kit",
+        "description": "A UI kit designed with Nordic themes, featuring sleek, frosty design elements and clean interfaces.",
+        "link": "https://example.com/frosty-ui-kit"
+      },
+      {
+        "banner": "images/project3-banner.jpg",
+        "title": "Polar Portfolio",
+        "description": "A portfolio template inspired by the Polar Night theme, with minimalist design and subtle animations.",
+        "link": "https://example.com/polar-portfolio"
+      },
+      {
+        "banner": "images/project4-banner.jpg",
+        "title": "Arctic Agency",
+        "description": "A landing page template for a creative agency, featuring cool tones and modern design elements.",
+        "link": "https://example.com/arctic-agency"
+      },
+      {
+        "banner": "images/project5-banner.jpg",
+        "title": "Aurora Blog",
+        "description": "A blog template inspired by the Aurora Borealis, with vibrant colors and elegant typography.",
+        "link": "https://example.com/aurora-blog"
+      }
+      
+    ]
+  }
+  
