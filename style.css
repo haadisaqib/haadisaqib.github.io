@@ -1,13 +1,13 @@
 /* Polar Night Nord Theme with Frost Hints */
 :root {
   --bg: #2E3440;           /* Polar Night background */
-  --secondary-bg: #3B4252;  /* Navbar and form input background */
+  --secondary-bg: #3B4252;  /* Navbar & input background */
   --text: #D8DEE9;         /* Light text for content */
   --heading: #E5E9F0;      /* Heading color */
   --border: #4C566A;       /* Border color */
-  --link: #81A1C1;         /* Frost accent for links and borders */
-  --link-hover: #88C0D0;   /* Hover accent for links and buttons */
-  --name: #5E81AC;         /* Accent color for the name in nav */
+  --link: #81A1C1;         /* Frost accent for links/borders */
+  --link-hover: #88C0D0;   /* Hover accent for links/buttons */
+  --name: #5E81AC;         /* Accent for nav name */
 }
 
 /* Reset and box-sizing */
@@ -34,13 +34,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: rgba(59, 66, 82, 0.5); /* More transparent for a stronger passthrough effect */
-  backdrop-filter: blur(5px); /* Subtle blur effect */
-  border: 1px solid var(--link); /* Frost color outline border */
+  background-color: rgba(59, 66, 82, 0.5); /* Strong passthrough */
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--link);
   border-radius: 10px;
   max-width: 1200px;
   width: 90%;
-  z-index: 1000;  /* Ensures the navbar stays on top */
+  z-index: 1000;
 }
 
 .navbar .nav-left h1 {
@@ -82,7 +82,7 @@ body {
   line-height: 1.6;
 }
 
-/* About Me Section Specific Styles */
+/* About Me Section Specific Styles (unchanged) */
 .about-content {
   display: flex;
   flex-direction: row;
@@ -109,7 +109,7 @@ body {
   text-align: left;
 }
 
-/* Contact Form Styles */
+/* Contact Form Styles (unchanged) */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -156,17 +156,40 @@ body {
   background-color: var(--link-hover);
 }
 
-/* Cards container for Projects */
-.cards-container {
+/* ---------- Slider and Cards Styles ---------- */
+
+/* Slider container (holds arrows and card slider) */
+.slider-container {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
+  width: 100%;
   margin-top: 20px;
 }
 
+/* Cards slider: a fixed-width container that shows 3 cards at a time */
+.cards-slider {
+  overflow: hidden;
+  width: calc(300px * 3 + 20px * 2); /* 3 cards (300px each) plus 2 gaps (20px each) */
+  max-width: 100%;
+  position: relative;
+}
+
+/* Cards container: holds all the cards in a row */
+.cards-container {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
+  /* Ensure the cards stay in a single row */
+  flex-wrap: nowrap;
+  /* del me later */
+   padding-top: 5px; 
+} 
+
 /* Individual project card */
 .project-card {
+  flex: 0 0 300px; /* Prevent shrinking: fixed width of 300px */
   display: flex;
   flex-direction: column;
   background-color: var(--secondary-bg);
@@ -174,7 +197,6 @@ body {
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
-  width: 300px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -202,4 +224,18 @@ body {
   font-size: 16px;
   margin: 0 10px 10px 10px;
   color: var(--text);
+}
+
+/* Slider arrows */
+.slider-arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--link);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.slider-arrow:hover {
+  color: var(--link-hover);
 }
