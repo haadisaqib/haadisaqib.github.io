@@ -1,35 +1,23 @@
 {
     "projects": [
       {
-        "banner": "images/project1-banner.jpg",
-        "title": "Nordic Explorer",
-        "description": "A web-based project exploring Nordic landscapes with interactive maps and data visualization.",
-        "link": "https://example.com/nordic-explorer"
+        "banner": "/assets/butterfly_augmentation.png",
+        "title": "Data Augmentation Tool",
+        "description": "A tool built with OpenCV to expand image datasets and boost model training.",
+        "link": "https://github.com/haadisaqib/easy-augmentor"
       },
       {
-        "banner": "images/project2-banner.jpg",
-        "title": "Frosty UI Kit",
-        "description": "A UI kit designed with Nordic themes, featuring sleek, frosty design elements and clean interfaces.",
-        "link": "https://example.com/frosty-ui-kit"
+        "banner": "/assets/portfolio.png",
+        "title": "Web Portfolio",
+        "description": "This website is a showcase of my projects and skills :)",
+        "link": "https://github.com/haadisaqib/web-portfolio"
       },
       {
-        "banner": "images/project3-banner.jpg",
-        "title": "Polar Portfolio",
-        "description": "A portfolio template inspired by the Polar Night theme, with minimalist design and subtle animations.",
-        "link": "https://example.com/polar-portfolio"
-      },
-      {
-        "banner": "images/project4-banner.jpg",
-        "title": "Aurora Dashboard",
-        "description": "An analytics dashboard with a crisp Nordic aesthetic and intuitive data presentation.",
-        "link": "https://example.com/aurora-dashboard"
-      },
-        {
-            "banner": "images/project5-banner.jpg",
-            "title": "Glacial Gallery",
-            "description": "A photo gallery template showcasing glacial landscapes and icy beauty, with responsive design.",
-            "link": "https://example.com/glacial-gallery"
-        }
+        "banner": "/assets/stock.png",
+        "title": "Telegram Bot Stock Screener",
+        "description": "A Python bot that scrapes S&P 500 data, identifies losers, and sends insights.",
+        "link": "https://github.com/haadisaqib/screener"
+      }
     ]
   }
   
