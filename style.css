@@ -1,0 +1,82 @@
+/* Polar Night Nord Theme with Frost Hints */
+:root {
+  --bg: #2E3440;           /* Polar Night background */
+  --secondary-bg: #3B4252;  /* Navbar background */
+  --text: #D8DEE9;         /* Light text for content */
+  --heading: #E5E9F0;      /* Heading color */
+  --border: #4C566A;       /* Border color */
+  --link: #81A1C1;         /* Frost accent for links */
+  --link-hover: #88C0D0;   /* Hover accent for links */
+  --name: #5E81AC;         /* Accent color for the name in nav */
+}
+
+/* Reset and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+  font-family: 'Noto Mono', monospace;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Navigation Bar Styles */
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  max-width: 1200px;
+  width: 90%;
+  z-index: 1000;  /* High z-index to ensure it stays on top */
+}
+
+.navbar .nav-left h1 {
+  font-size: 24px;
+  color: var(--name);
+}
+
+.navbar .nav-right a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--link);
+  transition: color 0.3s;
+}
+
+.navbar .nav-right a:hover {
+  color: var(--link-hover);
+}
+
+/* Section styles */
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: var(--heading);
+}
+
+.section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
