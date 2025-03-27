@@ -82,6 +82,20 @@ body {
   line-height: 1.6;
 }
 
+/* For screens up to 1920px wide */
+@media (max-width: 1920px) {
+  .section {
+    scroll-margin-top: 40px;
+  }
+}
+
+/* For screens wider than 1920px */
+@media (min-width: 1921px) {
+  .section {
+    scroll-margin-top: 80px;
+  }
+}
+
 /* About Me Section Specific Styles (unchanged) */
 .about-content {
   display: flex;
