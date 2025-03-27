@@ -1,7 +1,7 @@
 /* Polar Night Nord Theme with Frost Hints */
 :root {
   --bg: #2E3440;           /* Polar Night background */
-  --secondary-bg: #3B4252;  /* Navbar background */
+  --secondary-bg: #3B4252;  /* Navbar background base color */
   --text: #D8DEE9;         /* Light text for content */
   --heading: #E5E9F0;      /* Heading color */
   --border: #4C566A;       /* Border color */
@@ -24,7 +24,6 @@ body {
   color: var(--text);
 }
 
-/* Navigation Bar Styles */
 .navbar {
   position: fixed;
   top: 20px;
@@ -34,12 +33,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: var(--secondary-bg);
-  border: 1px solid var(--border);
+  background-color: rgba(59, 66, 82, 0.5); /* More transparent for a stronger passthrough effect */
+  backdrop-filter: blur(5px); /* Subtle blur effect */
+  border: 2px solid var(--link); /* Frost color outline border */
   border-radius: 10px;
   max-width: 1200px;
   width: 90%;
-  z-index: 1000;  /* High z-index to ensure it stays on top */
+  z-index: 1000;  /* Ensures the navbar stays on top */
 }
 
 .navbar .nav-left h1 {
@@ -79,4 +79,31 @@ body {
 .section p {
   font-size: 18px;
   line-height: 1.6;
+}
+
+/* About Me Section Specific Styles */
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.portrait {
+  flex: 0 0 auto;
+}
+
+.portrait img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
 }
